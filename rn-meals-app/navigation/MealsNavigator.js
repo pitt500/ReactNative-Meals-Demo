@@ -10,7 +10,7 @@ import { createMaterialBottomTabNavigator } from 'react-navigation-material-bott
 import CategoriesScreen from '../screens/CategoriesScreen';
 import CategoryMealsScreen from '../screens/CategoryMealsScreen';
 import MealDetailScreen from '../screens/MealDetailScreen';
-import Favorites from '../screens/FavoritesScreen';
+import FiltersScreen from '../screens/FiltersScreen';
 import Colors from '../constants/Colors';
 import FavoritesScreen from '../screens/FavoritesScreen';
 
@@ -73,4 +73,14 @@ const MealFavTabNavigator = Platform.OS === 'android'
         }
     });
 
-export default createAppContainer(MealFavTabNavigator);
+const FiltersNavigator = createStackNavigator({
+    Filters: FiltersScreen
+});
+
+// This allow us to include the burger menu
+const MainNavigator = createDrawerNavigator({
+    MealsFavs: MealFavTabNavigator,
+    Filters: FiltersNavigator
+});
+
+export default createAppContainer(MainNavigator);
