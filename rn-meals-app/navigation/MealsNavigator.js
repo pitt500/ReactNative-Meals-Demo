@@ -73,9 +73,14 @@ const MealFavTabNavigator = Platform.OS === 'android'
         }
     });
 
-const FiltersNavigator = createStackNavigator({
-    Filters: FiltersScreen
-});
+const FiltersNavigator = createStackNavigator(
+    {
+        Filters: FiltersScreen
+    },
+    {
+        defaultNavigationOptions: defaultStackNavOptions
+    }
+);
 
 // This allow us to include the burger menu
 const MainNavigator = createDrawerNavigator({
