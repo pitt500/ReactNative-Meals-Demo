@@ -84,8 +84,20 @@ const FiltersNavigator = createStackNavigator(
 
 // This allow us to include the burger menu
 const MainNavigator = createDrawerNavigator({
-    MealsFavs: MealFavTabNavigator,
+    MealsFavs: {
+        screen: MealFavTabNavigator,
+        navigationOptions: {
+            drawerLabel: 'Meals'
+        }
+    },
     Filters: FiltersNavigator
+}, {
+    contentOptions: {
+        activeTintColor: Colors.accentColor,
+        labelStyle: {
+            fontFamily: 'open-sans-bold'
+        }
+    }
 });
 
 export default createAppContainer(MainNavigator);
