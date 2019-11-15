@@ -2,8 +2,9 @@
 An app to practice navigation in React Native
 
 # Expo CLI
-This project has been created with [Expo CLI](https://facebook.github.io/react-native/docs/getting-started). You should install `Expo` in order to run the app properly. 
-`npm install -g expo-cli`
+This project has been created with [Expo CLI](https://facebook.github.io/react-native/docs/getting-started). 
+You should install `Expo` in order to run the app properly. 
+> `npm install -g expo-cli`
 
 # How to run
 1. Clone the project: `git clone https://github.com/pitt500/ReactNative-Meals-Demo`
