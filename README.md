@@ -10,5 +10,6 @@ This project has been created with Expo CLI (more here: https://facebook.github.
 2. Go to the created folder `cd ReactNative-Meals-Demo`
 3. Run `npm install` and then `npm start`
 
-Question?, contact me on twitter `@pitt500`. Have a nice day :)!
+# Questions?
+Contact me on twitter `@pitt500`. Have a nice day :)!
 
